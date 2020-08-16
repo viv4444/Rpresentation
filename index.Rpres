@@ -1,0 +1,36 @@
+Plotly Presentation
+========================================================
+author:Vivek Singh 
+date: 16-08-2020
+autosize: true
+
+Welcome to the presentation
+========================================================
+
+
+- This is a detailed presentation on how to create 3D plots using plotly 
+- By generating 60 random uniform numbers each and plotting them in a three dimensional plot
+- 3 Axes are defined namely X, Y and Z for this purpose
+
+
+
+Slide With Plot
+========================================================
+
+```{r, echo=FALSE}
+library(plotly)
+library(webshot)
+
+xaxes<-list(nticks=4,range=c(-25,75))
+yaxes<-list(nticks=4,range=c(-25,75))
+zaxes<-list(nticks=4,range=c(0,50))
+
+set.seed(4321)
+x<-runif(60,0,1)
+y<-runif(60,0,1)
+z<-runif(60,0,1)
+
+fig<-plot_ly(x=~x,y=~y,z=~z,type="mesh3d")
+fig<-fig%>%layout(scene=list(xaxis=xaxes,yaxis=yaxes,zaxis=zaxes))
+fig
+```
