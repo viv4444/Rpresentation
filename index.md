@@ -8,9 +8,9 @@ Welcome to the presentation
 ========================================================
 
 
-- This is a detailed presentation on how to create 3D plots using plotly 
-- By generating 60 random uniform numbers each and plotting them in a three dimensional plot
-- 3 Axes are defined namely X, Y and Z for this purpose
+- This is a detailed presentation on how to create histogram plots using plotly 
+- This presentiation shows how to include more than one type of histogram in a single plot 
+- alpha used for this purpose is 0.6
 
 
 
